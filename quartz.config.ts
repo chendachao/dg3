@@ -10,7 +10,7 @@ const config: QuartzConfig = {
       provider: "plausible",
     },
     baseUrl: "garden.oldwinter.top",
-    ignorePatterns: ["private", "templates"],
+    ignorePatterns: ["private", "templates", "Extras/Templates","Sources/Movies + TV/豆瓣影音导入", "Spaces/0-Work"],
     theme: {
       typography: {
         header: "Schibsted Grotesk",
