@@ -7,7 +7,7 @@ export const sharedPageComponents: SharedLayout = {
   header: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/oldwinter/dg3",
+      GitHub: "https://github.com/oldwinter/knowledge-garden",
     },
   }),
 }
@@ -21,6 +21,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Search(),
     Component.Darkmode(),
     Component.DesktopOnly(Component.TableOfContents()),
+    Component.DesktopOnly(Component.RecentNotes({ linkToMore: "tags" , limit: 3 })),
   ],
   right: [Component.Graph(), Component.Backlinks()],
 }
